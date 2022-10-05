@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text,Image, TouchableOpacity, View } from 'react-native';
 import { connect } from 'react-redux';
 import { exit } from '../../store/actions/authActions';
 
@@ -9,9 +9,7 @@ const Profile = (props) => {
     }
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" ,borderWidth:1}}>
-      <Text>
-        Profile
-      </Text>
+  <Image />
       <TouchableOpacity style={{backgroundColor:'red',width:"80%",alignSelf:'center',marginVertical:20}} onPress={()=>handleExit()}>
         <Text style={{color:'white',padding:10,alignSelf:'center'}}>Exit</Text>
       </TouchableOpacity>

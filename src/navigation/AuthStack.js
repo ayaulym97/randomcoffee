@@ -9,6 +9,8 @@ function AuthStackScreen() {
     <AuthStack.Navigator>
       <AuthStack.Screen name="Signin" component={Signin} />
       <AuthStack.Screen name="SignUp" component={SignUp} />
+
+  
     </AuthStack.Navigator>
   );
 }

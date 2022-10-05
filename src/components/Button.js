@@ -2,10 +2,11 @@ import React from "react";
 import {  Text, TouchableOpacity } from "react-native";
 const Button = ({
     title,
-    onPress
+    onPress,
+    style
 })=>{
     return(
-        <TouchableOpacity style={{backgroundColor:'red',width:"80%",alignSelf:'center',marginVertical:20}} onPress={onPress}>
+        <TouchableOpacity style={[{backgroundColor:'red',justifyContent:'center',alignItems:'center'},style]} onPress={onPress}>
         <Text style={{color:'white',padding:10,alignSelf:'center'}}>{title}</Text>
       </TouchableOpacity>
     )
