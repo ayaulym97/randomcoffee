@@ -1,4 +1,6 @@
 import React from 'react';
+import LottieView from 'lottie-react-native';
+
 import {Text, View} from 'react-native';
 import { connect } from 'react-redux';
 import {Button} from '../../components';
@@ -13,9 +15,9 @@ const Chat = (props) => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Text>Try editing me! 🎉</Text>
-      <Button title={'Press'} onPress={()=>handleNaivgation()}/>
-      <Button title={'EXIT'} onPress={()=>handkeExit()}/>
+     <LottieView source={require('../../img/lottie.json')} autoPlay loop />
+      {/* <Button title={'Press'} onPress={()=>handleNaivgation()}/>
+      <Button title={'EXIT'} onPress={()=>handkeExit()}/> */}
     </View>
   );
 };
